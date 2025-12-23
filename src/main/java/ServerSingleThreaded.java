@@ -4,7 +4,7 @@ import java.net.Socket;
 import java.util.Date;
 
 public class ServerSingleThreaded {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws IOException {
         //Connect on port 8080, and listen
         ServerSocket server = new ServerSocket(8080);
         while (true) {
