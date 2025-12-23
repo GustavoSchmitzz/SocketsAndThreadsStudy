@@ -8,7 +8,6 @@ public class ServerSingleThreaded {
         //Connect on port 8080, and listen
         ServerSocket server = new ServerSocket(8080);
         while (true) {
-            Thread.sleep(10000);
             Socket client = server.accept();
             System.out.println("client connected: " + client.getInetAddress().getHostName());
 
@@ -27,6 +26,5 @@ public class ServerSingleThreaded {
             writer.flush();
             client.close();
         }
-
     }
 }
